@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css">
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.iife.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+        body{
+            padding: 10px;
+            padding-top: 1330px;
+        }
+        form {
+            width: 300px;
+        }
+        form .form-control{
+            display: inline-block;
+        }
+        form input {
+            margin-bottom: 10px;
+        }
+        form .select2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        name: 
+        <input type="text" class="name form-control">
+        <br/>
+        email:  
+        <input type="email" class="email form-control">
+        <br/>
+        password: 
+        <input type="password" class="password form-control">
+        <br/>
+        二级联动: 
+        <select class="select22 form-control"></select>
+        <br/>
+        二级联动: 
+        <select class="select2 form-control"></select>
+        <br/>
+        <button class="submit btn btn-circle blue btn-block">submit</button>
+    </form>
+    <script src="./index.js"></script>
+    <script>
+        new select_3331({
+            childNameList:[],                               // 可能的子元素键盘值
+            targetNameList:[],                              // 当前节点储存原俗名
+            finalKey: 'id',                         // 目标属性名称
+            select: document.querySelector(".select2"),     // 当前select元素
+            level: ['事项分类','费用分类','费用名称'],        // 等级名称
+            data:data,
+        })
+        new select_3331({
+            childNameList:[],                               // 可能的子元素键盘值
+            targetNameList:[],                              // 当前节点储存原俗名
+            finalKey: 'id',                         // 目标属性名称
+            select: document.querySelector(".select2"),     // 当前select元素
+            level: ['事项分类','费用分类','费用名称'],        // 等级名称
+            data:data,
+        })
+        new select_3331({
+            childNameList:[],                               // 可能的子元素键盘值
+            targetNameList:[],                              // 当前节点储存原俗名
+            finalKey: 'id',                         // 目标属性名称
+            select: document.querySelector(".select22"),     // 当前select元素
+            level: ['事项分类','费用分类','费用名称'],        // 等级名称
+            data,
+        })
+    </script>
+</body>
+</html>
